@@ -1,4 +1,44 @@
 <% include ./partials/header.ejs %>
-
-
+<div
+  class="w-full h-screen bg-[url('https://i.pinimg.com/564x/17/08/54/170854aeff4f3e2f964fe80332d2d91e.jpg')] bg-no-repeat bg-cover flex items-center justify-center bg-center"
+>
+  <div
+    class="w-72 bg-white px-8 py-10 rounded-[30px] flex-col items-center justify-center"
+  >
+    <h1
+      class="text-2xl leading-none tracking-tighter text-center capitalize font-semibold text-zinc-800"
+    >
+      Welcome To IntellPin
+    </h1>
+    <form action="">
+      <input
+        class="capitalize border-2 rounded-md block w-full my-[20px] px-3 py-2"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
+      <input
+        class="capitalize border-2 rounded-md block w-full my-[20px] px-3 py-2"
+        type="password"
+        name="password"
+        placeholder="password"
+      />
+      <a
+        href="#"
+        class="w-full mt-2 inline-block font-semibold text-zinc-500 text-center"
+        >Forgot Password ?</a
+      >
+      <input
+        class="capitalize border-2 block w-full mt-2 px-3 py-2 bg-red-600 text-white rounded-full cursor-pointer hover:bg-red-700 transition-all"
+        type="submit"
+        value="Login"
+      />
+    </form>
+    <a
+      href="/register"
+      class="w-full mt-2 inline-block font-semibold text-zinc-500 text-center"
+      >Don't Have An Account ?</a
+    >
+  </div>
+</div>
 <% include ./partials/footer.ejs %>
