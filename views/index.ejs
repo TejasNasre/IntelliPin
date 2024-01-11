@@ -10,6 +10,9 @@
     >
       Welcome To IntellPin
     </h1>
+    <% if (error.length > 0) { %>
+    <div class="error"><%= error %></div>
+    <% } %>
     <form action="/login" method="post">
       <input
         class="border-2 rounded-md block w-full my-[20px] px-3 py-2"

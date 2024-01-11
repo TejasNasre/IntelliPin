@@ -8,7 +8,7 @@ const userSchema = mongoose.Schema({
   username: {
     type: String,
   },
-  name: {
+  fullname: {
     type: String,
   },
   email: {
@@ -23,10 +23,16 @@ const userSchema = mongoose.Schema({
   profileImage: {
     type: String,
   },
-  boards : {
-    type : Array,
-    default : []
-  }
+  boards: {
+    type: Array,
+    default: [],
+  },
+  posts: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Post",
+    },
+  ],
 });
 
 userSchema.plugin(plm);
