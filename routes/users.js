@@ -1,8 +1,14 @@
 const mongoose = require("mongoose");
 
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const plm = require("passport-local-mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/IntellPin");
+// mongoose.connect("mongodb://127.0.0.1:27017/IntellPin");
+
+mongoose.connect(process.env.MONGODB_CONNECT_URI)
 
 const userSchema = mongoose.Schema({
   username: {

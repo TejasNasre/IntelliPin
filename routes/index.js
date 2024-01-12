@@ -72,6 +72,7 @@ router.post(
   passport.authenticate("local", {
     failureRedirect: "/",
     successRedirect: "/profile",
+    failureFlash : true
   }),
   function (req, res) {}
 );

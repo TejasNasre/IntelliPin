@@ -17,3 +17,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+.error{
+  font-weight: bolder;
+  color: red;
+  text-transform: capitalize;
+  margin: 7px 0;
+  font-size: 11px;
+}
